@@ -23,10 +23,17 @@ from db.models import *
 ## START OF APPLICATION
 ############################################################################
 """ Replace the code below with your own """
+# Clear any existing data to avoid duplicate entries
+Product.objects.all().delete()
 
-# Seed a few users in the database
-User.objects.create(name='Dan')
-User.objects.create(name='Robert')
+# Insert sample products into the database
+Product.objects.create(upc="1234", name="Red Apple", price=0.99)
+Product.objects.create(upc="5678", name="Banana", price=0.79)
+Product.objects.create(upc="4321", name="Orange Juice", price=3.49)
+Product.objects.create(upc="8765", name="Milk", price=2.29)
+Product.objects.create(upc="1937", name="Loaf of Bread", price=2.99)
 
-for u in User.objects.all():
-    print(f'ID: {u.id} \tUsername: {u.name}')
+# Print confirmation and product list
+print("Product database populated successfully!\n")
+for p in Product.objects.all():
+    print(f"UPC: {p.upc}\tName: {p.name}\tPrice: ${p.price}")
