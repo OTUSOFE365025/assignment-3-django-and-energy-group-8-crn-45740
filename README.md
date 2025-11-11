@@ -94,8 +94,10 @@ Create a virtual environment and install Django
 Initialize the database and run the project 
 <img width="1070" height="580" alt="Screenshot 2025-11-09 214341" src="https://github.com/user-attachments/assets/47fabb4e-bd48-4ab6-b096-de7fd4456d0c" />
 
-<img width="1169" height="330" alt="image" src="https://github.com/user-attachments/assets/26c18fca-f813-40d2-88cf-3d4091f856a8" />
+apps.py
+<img width="1319" height="466" alt="image" src="https://github.com/user-attachments/assets/668c8ad7-bafa-4498-8608-c66c74dce88b" />
 
+models.py
 <img width="1170" height="535" alt="image" src="https://github.com/user-attachments/assets/506e9373-e51d-469d-b16c-655c465b5518" />
 
 Besides main.py, we also added changes for model.py and apps.py, allowing the GUI to work properly with the UPC codes, and display them accordingly.
