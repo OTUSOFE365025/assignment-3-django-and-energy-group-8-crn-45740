@@ -1,3 +1,119 @@
+# Assignment 3: Django Frameworks and Energy Quality Attribute
+Team Members and Contributions
+**Group 8 – CRN 45740** 
+| Member | Contributions Phase 1 |
+|--------|--------------------------------|
+| Geraline Chavez 100890130 | Question 2 Part A & B (Tactics 1, 2) |
+| Christopher Lui 100912564 | Question 1 Part B |
+| Nicholas Furtado 100908880 | Question 1 Part A & Question 2 Part B (Tactics 3, 4) |
+
+Every team members participated proportionally in review, editing, and integration of the first phase of the project. 
+
+---
+
+## Overview
+
+This project is divided into two parts:
+
+1. **Question 1 – Django ORM Implementation:**  
+   Using Django’s Object-Relational Mapper (ORM) in standalone mode to simulate the functionality of a cash register.  
+   The focus for this part is database population and data handling.
+
+2. **(Attached as PDF to repository but submitted separately on canvas) Question 2 – Energy Efficiency Quality Attribute:**  
+   Creating a **Concrete Energy Efficiency Scenario** for the *CalmMind* anxiety-tracking application, followed by identification of multiple architectural or design tactics to improve the system’s energy efficiency.
+
+---
+
+### **Files**
+## Project Structure
+--------------------------------
+```
+SOFTWARELAB3/
+│
+├─ lab3django/ # Django project configuration folder
+│ ├─ pycache/
+│ ├─ init.py
+│ ├─ asgi.py
+│ ├─ settings.py
+│ ├─ urls.py
+│ └─ wsgi.py
+│
+├─ mainapp/ # Django app folder
+│ ├─ pycache/
+│ ├─ migrations/
+│ ├─ init.py
+│ ├─ admin.py
+│ ├─ apps.py
+│ ├─ models.py
+│ ├─ tests.py
+│ ├─ urls.py
+│ └─ views.py
+│
+├─ venv/ # Python virtual environment
+│ ├─ Include/
+│ ├─ Lib/
+│ └─ Scripts/
+│
+├─ .gitignore
+├─ pyvenv.cfg
+├─ db.sqlite3 # SQLite database file
+├─ main.py
+└─ manage.py # Django management script
+```
+---
+**Quick Setup & Run Instructions (Windows)**
+
+Create a folder for your project on your local machine
+```
+mkdir myproject; cd myproject
+```
+Create a virtual environment and install django
+```
+python -m venv venv; source venv/bin/activate; pip install django
+```
+Clone the repository from GitHub:
+```
+git clone git@github.com:dancaron/Django-ORM.git; cd Django-ORM](https://github.com/OTUSOFE365025/assignment-3-django-and-energy-group-8-crn-45740.git
+```
+Initialize the database
+```
+python manage.py makemigrations db; python manage.py migrate
+```
+Run the project
+```
+python main.py
+```
+## Part 1 – Django ORM Implementation (Cash Register App)
+
+### **Objective**
+To use the Django ORM framework to populate a local SQLite database with product information (UPC, name, and price), simulating a cash register’s product catalog.
+
+Create a virtual environment and install Django  
+<img width="1077" height="620" alt="Screenshot 2025-11-09 214258" src="https://github.com/user-attachments/assets/45a5a291-8e25-4ee7-8b51-4898b2be3326" />
+
+Initialize the database and run the project 
+<img width="1070" height="580" alt="Screenshot 2025-11-09 214341" src="https://github.com/user-attachments/assets/47fabb4e-bd48-4ab6-b096-de7fd4456d0c" />
+
+apps.py
+<img width="1319" height="466" alt="image" src="https://github.com/user-attachments/assets/668c8ad7-bafa-4498-8608-c66c74dce88b" />
+
+models.py
+<img width="1170" height="535" alt="image" src="https://github.com/user-attachments/assets/506e9373-e51d-469d-b16c-655c465b5518" />
+
+Besides main.py, we also added changes for model.py and apps.py, allowing the GUI to work properly with the UPC codes, and display them accordingly.
+
+
+
+## Part 2 - Energy Efficency Quality Attribute
+*Attached as PDF to repository but submitted separately on canvas
+- *Concrete Energy Efficiency Scenario* of *CalmMind* anxiety-tracking application
+- *Architectural and design tactics* to improve the system’s energy efficiency 
+
+--------------------------------------------------------------------------------------------------
+---
+README provided with the assignment 
+
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-cPJVYMd)
 Django ORM Standalone
 =====================
 
